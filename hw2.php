@@ -5,7 +5,9 @@ echo '<meta charset="utf-8">';
 interface Camera{
     //Общий интерфейс фотоаппаратов
     public function reload($type);//Перезарядка камеры
+    
     public function focusing($type);//Фокусировка камеры
+    
     public function click($type);//Сделать фото
 }
 class aCamera implements Camera {
